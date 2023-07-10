@@ -16,7 +16,7 @@ function playGame(playerChoice) {
   updateRoundAndScore();
   displayResult(playerChoice, computerChoice, result);
 
-  if (playerScore === 2 || computerScore === 2) {
+  if (playerScore === 3 || computerScore === 3) {
     endGame();
   } else {
     round++;
@@ -68,7 +68,7 @@ function endGame() {
   restartButton.innerText = 'Restart';
   restartButton.addEventListener('click', restartGame);
 
-  if (playerScore === 2) {
+  if (playerScore === 3) {
     resultElement.innerHTML += '<p>Congratulations! You won the game!</p>';
   } else {
     resultElement.innerHTML += '<p>Computer won the game!</p>';
