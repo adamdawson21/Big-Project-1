@@ -5,6 +5,16 @@ let round = 1;
 const roundElement = document.querySelector('.round');
 const playerScoreElement = document.querySelector('.player-score');
 const computerScoreElement = document.querySelector('.computer-score');
+const gameContainer = document.querySelector('.game--container');
+const startScreen = document.getElementById('start-screen');
+const startButton = document.getElementById('start-button');
+
+startButton.addEventListener('click', startGame);
+
+function startGame() {
+  startScreen.style.display = 'none';
+  gameContainer.style.display = 'block';
+}
 
 function playGame(playerChoice) {
   const choices = ['rock', 'paper', 'scissors'];
@@ -21,7 +31,15 @@ function playGame(playerChoice) {
   } else {
     round++;
   }
+  // this.toggleScreen('#start-screen', false);
+  // this.toggleScreen('.game--container', true);
 }
+
+// function toggleScreen(id, toggle) {
+//   let element = document.getElementById(id);
+//   let display = (toggle) ? 'block' : 'none';
+//   element.style.toggle = display;
+// }
 
 function compareChoices(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
@@ -92,6 +110,10 @@ function openInfoModal() {
 function closeInfoModal() {
   infoModal.style.display = 'none';
 }
+
+// function startGame() {
+//   playGame.start();
+// }
 
 function restartGame() {
   playerScore = 0;
