@@ -81,7 +81,7 @@ function endGame() {
   if (playerScore === 3) {
     resultElement.innerHTML += '<p>Congratulations! You won the game!</p>';
   } else {
-    resultElement.innerHTML += '<p>Computer won the game!</p>';
+    resultElement.innerHTML += '<p>Computer won the game! Better luck next time!</p>';
   }
 
   optionsElement.innerHTML = '';
@@ -117,5 +117,11 @@ function restartGame() {
   `;
 
   updateRoundAndScore();
+
+  // gameContainer.style.display = 'none';
+  // startScreen.style.display = 'block'
 }
+
+
+
 updateRoundAndScore();
