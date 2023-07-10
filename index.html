@@ -17,8 +17,8 @@
         <p>Round: <span class="round">1</span></p>
       </div>
       <div class="score-info">
-        <p>Player: <span class="player-score">0</span></p>
-        <p>Computer: <span class="computer-score">0</span></p>
+        <p>Player Score: <span class="player-score">0</span></p>
+        <p>Computer Score: <span class="computer-score">0</span></p>
       </div>
     </div>
     <div class="result"></div>
@@ -28,7 +28,19 @@
       <button onclick="playGame('paper')">Paper</button>
       <button onclick="playGame('scissors')">Scissors</button>
     </div>
+    <div id="info-button-container">
+      <button id="info-button">Info</button>
+    </div>
   </div>
+  <div id="info-modal">
+    <div id="info-content">
+      <h2>Game Rules</h2>
+      <p>Rock beats scissors. Scissors beats paper. Paper beats rock.</p>
+      <p>Each round, you and the computer will choose one of the three options. The winner of the round will earn a
+        point.</p>
+      <p>The game ends when either you or the computer reaches the required number of points to win (best of three or
+        best of five rounds).</p>
+      <button id="close-button">Close</button>
 </body>
 
 </html>

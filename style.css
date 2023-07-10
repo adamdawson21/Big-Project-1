@@ -6,10 +6,17 @@ body {
 
 h1 {
   color: #333;
-  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
 }
 
 .game--container {
+  margin-top: 100px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   margin-top: 50px;
 }
 
@@ -17,12 +24,6 @@ h1 {
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
-}
-
-.options {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
 }
 
 button {
@@ -42,15 +43,20 @@ button:hover {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 10px;
+  padding-top: 10px;
 }
 
 .round-info {
   justify-content: left;
+  text-align: left;
+  margin-top: 0;
 }
 
 .score-info {
   justify-content: right;
+  text-align: right;
 }
 
 .round,
@@ -63,4 +69,42 @@ button:hover {
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
+}
+
+#info-button-container {
+  text-align: right;
+}
+
+#info-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-content {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#close-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#close-button:hover {
+  background-color: #555;
 }

@@ -60,6 +60,7 @@ function updateRoundAndScore() {
   computerScoreElement.textContent = computerScore;
 }
 
+
 function endGame() {
   const resultElement = document.querySelector('.result');
   const optionsElement = document.querySelector('.options');
@@ -75,6 +76,21 @@ function endGame() {
 
   optionsElement.innerHTML = '';
   optionsElement.appendChild(restartButton);
+}
+
+const infoButton = document.getElementById('info-button');
+const infoModal = document.getElementById('info-modal');
+const closeButton = document.getElementById('close-button');
+
+infoButton.addEventListener('click', openInfoModal);
+closeButton.addEventListener('click', closeInfoModal);
+
+function openInfoModal() {
+  infoModal.style.display = 'flex';
+}
+
+function closeInfoModal() {
+  infoModal.style.display = 'none';
 }
 
 function restartGame() {
