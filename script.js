@@ -2,6 +2,10 @@ let playerScore = 0;
 let computerScore = 0;
 let round = 1;
 
+const roundElement = document.querySelector('.round');
+const playerScoreElement = document.querySelector('.player-score');
+const computerScoreElement = document.querySelector('.computer-score');
+
 function playGame(playerChoice) {
   const choices = ['rock', 'paper', 'scissors'];
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -9,6 +13,7 @@ function playGame(playerChoice) {
   const result = compareChoices(playerChoice, computerChoice);
 
   updateScore(result);
+  updateRoundAndScore();
   displayResult(playerChoice, computerChoice, result);
 
   if (playerScore === 2 || computerScore === 2) {
@@ -43,12 +48,16 @@ function updateScore(result) {
 function displayResult(playerChoice, computerChoice, result) {
   const resultElement = document.querySelector('.result');
   resultElement.innerHTML = `
-    <p>Round ${round}</p>
     <p>You chose <strong>${playerChoice}</strong>.</p>
     <p>Computer chose <strong>${computerChoice}</strong>.</p>
     <p>${result}</p>
-    <p>Player Score: ${playerScore} | Computer Score: ${computerScore}</p>
   `;
+}
+
+function updateRoundAndScore() {
+  roundElement.textContent = round;
+  playerScoreElement.textContent = playerScore;
+  computerScoreElement.textContent = computerScore;
 }
 
 function endGame() {
@@ -80,4 +89,7 @@ function restartGame() {
     <button onclick="playGame('paper')">Paper</button>
     <button onclick="playGame('scissors')">Scissors</button>
   `;
+
+  updateRoundAndScore();
 }
+updateRoundAndScore();

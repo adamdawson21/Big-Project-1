@@ -1,10 +1,12 @@
 body {
+  background-color: lightblue;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 h1 {
   color: #333;
+  /* margin-bottom: 100px; */
 }
 
 .game--container {
@@ -20,7 +22,7 @@ h1 {
 .options {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 button {
@@ -35,4 +37,30 @@ button {
 
 button:hover {
   background-color: #555;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.round-info {
+  justify-content: left;
+}
+
+.score-info {
+  justify-content: right;
+}
+
+.round,
+.player-score,
+.computer-score {
+  font-weight: bold;
+}
+
+.result {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
