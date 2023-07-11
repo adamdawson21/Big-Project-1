@@ -122,6 +122,8 @@ function restartGame() {
 
   updateRoundAndScore();
 
+  // this would reset the game back to the start screen
+
   // gameContainer.style.display = 'none';
   // startScreen.style.display = 'block'
 }
