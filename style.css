@@ -18,7 +18,7 @@ h1 {
 .options {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   margin-top: 60px;
 }
 
@@ -127,6 +127,7 @@ section {
   text-align: center;
   /* margin-left: 590px; */
   justify-content: space-around;
+  gap: 30px;
 }
 
 @media screen and (min-width: 576px) {
