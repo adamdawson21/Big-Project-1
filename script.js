@@ -33,6 +33,10 @@ function playGame(playerChoice) {
   }
 }
 
+function displayPlayerChoiceImage(playerChoice) {
+  playerChoiceImage.src = `images/${playerChoice}.png`;
+}
+
 function compareChoices(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     return 'It\'s a tie!';

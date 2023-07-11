@@ -118,3 +118,13 @@ footer {
   text-align: center;
   vertical-align: bottom;
 }
+
+section {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 590px;
+  justify-content: space-between;
+}
