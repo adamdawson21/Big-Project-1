@@ -125,6 +125,33 @@ section {
   height: 100px;
   margin: auto;
   text-align: center;
-  margin-left: 590px;
-  justify-content: space-between;
+  /* margin-left: 590px; */
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    height: 100vh
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  body {
+    height: 100vh
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  body {
+    height: 100vh
+  }
 }
