@@ -19,7 +19,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .result {
@@ -114,7 +114,7 @@ button:hover {
 
 footer {
   color: #333;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   vertical-align: bottom;
 }
