@@ -127,7 +127,7 @@ section {
   text-align: center;
   /* margin-left: 590px; */
   justify-content: space-around;
-  gap: 30px;
+  gap: 20px;
 }
 
 @media screen and (min-width: 576px) {
